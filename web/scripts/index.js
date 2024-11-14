@@ -322,6 +322,7 @@ function updateImage() {
         const newImage = new Image();
         newImage.onload = function() {
             image.src = newImage.src; // Update only if the new image loads successfully
+            image.style.transform = "rotate(180deg)"; // Rotate the image 180 degrees
         };
         newImage.onerror = function() {
             console.warn("New image could not be loaded, keeping the previous image.");
@@ -329,6 +330,7 @@ function updateImage() {
         newImage.src = "screen.png?t=" + new Date().getTime(); // Prevent caching
     }
 }
+
 
 function startLiveview() {
     updateImage(); // Immediately update the image
