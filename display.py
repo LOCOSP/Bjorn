@@ -342,7 +342,8 @@ class Display:
 
                 if self.screen_reversed:
                     image = image.transpose(Image.ROTATE_180)
-
+                    
+                image = image.rotate(180)
                 self.epd_helper.display_partial(image)
                 self.epd_helper.display_partial(image)
 
