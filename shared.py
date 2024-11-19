@@ -74,6 +74,8 @@ class SharedData:
         self.vulnerabilities_dir = os.path.join(self.output_dir, 'vulnerabilities')
         self.scan_results_dir = os.path.join(self.output_dir, "scan_results")
         # Directories under resourcesdir
+        self.wpasec_harvester_dir = os.path.join(self.resourcesdir, 'custom-shares', 'WpaSecHarvester')
+        os.makedirs(self.wpasec_harvester_dir, exist_ok=True)
         self.picdir = os.path.join(self.resourcesdir, 'images')
         self.fontdir = os.path.join(self.resourcesdir, 'fonts')
         self.commentsdir = os.path.join(self.resourcesdir, 'comments')
@@ -88,6 +90,12 @@ class SharedData:
         self.actions_file = os.path.join(self.configdir, 'actions.json')
         # Files directly under resourcesdir
         self.commentsfile = os.path.join(self.commentsdir, 'comments.json')
+        # Files directly under wpasec_harvester_dir
+        self.wpasec_env_path = os.path.join(self.wpasec_harvester_dir, '.env')
+        self.wpasec_potfile_path = os.path.join(self.wpasec_harvester_dir, 'wpa-sec.founds.potfile')
+        self.wpasec_cracked_path = os.path.join(self.wpasec_harvester_dir, 'my-cracked.txt')
+        self.wpasec_networks_path = os.path.join(self.wpasec_harvester_dir, 'networks.txt')
+        self.wpasec_networks_done_path = os.path.join(self.wpasec_harvester_dir, 'networks_done.txt')
         # Files directly under datadir
         self.netkbfile = os.path.join(self.datadir, "netkb.csv")
         self.livestatusfile = os.path.join(self.datadir, 'livestatus.csv')
