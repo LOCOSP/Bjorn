@@ -8,13 +8,13 @@ import shutil
 import subprocess
 
 
-b_class = "WpaSecHarvesting"
+b_class = "WpaSecHarvester"
 b_module = "WpaSecHarvester"
 b_status = "harvesting"
 b_port = 0
 b_parent = None
 
-class WpaSecHarvesting:
+class WpaSecHarvester:
     def __init__(self, shared_data):
         self.shared_data = shared_data
         self.console = Console()
