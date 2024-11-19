@@ -9,8 +9,8 @@ import subprocess
 
 
 b_class = "WpaSecHarvesting"
-b_module = "wpa_sec_harvesting"
-b_status = "wpa_sec_harvesting_action"
+b_module = "WpaSecHarvester"
+b_status = "harvesting"
 b_port = 0
 b_parent = None
 

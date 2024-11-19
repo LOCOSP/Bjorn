@@ -120,9 +120,9 @@
     },
     {
         "b_module": "WpaSecHarvester",
-        "b_class": "WpaSecHarvester",
+        "b_class": "WpaSecHarvesting",
         "b_port": 0,
-        "b_status": "WpaSecHarvester",
+        "b_status": "harvesting",
         "b_parent": null
     }
 ]
