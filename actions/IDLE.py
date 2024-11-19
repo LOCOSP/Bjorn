@@ -14,7 +14,3 @@ console = Console()
 class IDLE:
     def __init__(self, shared_data):
         self.shared_data = shared_data
-        
-
-
-    
